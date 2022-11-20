@@ -2,6 +2,6 @@
 
 ## Используемые инструменты
 
-*HTML
-*CSS/SCSS
-\*Java Script
+- ### HTML
+- ### CSS/SCSS
+- ### Java Script
