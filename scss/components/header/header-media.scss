@@ -1,0 +1,17 @@
+@include tablet {
+  .header {
+    .container {
+      .header__menu {
+        display: none;
+      }
+      .hidden-menu {
+        display: block;
+      }
+      .header__logo img {
+        width: 63px;
+        height: 23px;
+        padding-top: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Calistoga&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Raleway&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Calistoga&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <link rel="stylesheet" href="media.css" /> -->
+    <title>AXIT</title>
+  </head>
+  <div id="root"></div>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="#"
+            ><img src="assets/logo.svg" width="84px" height="31px" alt="logo"
+          /></a>
+        </div>
+        <nav class="header__menu">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hidden-menu">
+          <input type="checkbox" id="check" />
+          <label for="check">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </label>
+          <div class="sidebar">
+            <nav class="nav-toggle">
+              <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <a id="backTop" href="#" class="backTop"
+        ><img src="./assets/top.png" alt="Top"
+      /></a>
+      <div class="container">
+        <div class="banner__item">
+          <div class="banner__item-text">
+            <div class="banner__item-logo"></div>
+            <h1>modern axure template for beautiful prototypes</h1>
+            <div class="separator"></div>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+            <a href="#" class="button button-download">Download</a>
+          </div>
+          <div class="banner__item-form">
+            <h4>try your <span>free</span> trial today</h4>
+            <form method="get" action="#">
+              <div class="form-field">
+                <div class="name">
+                  <input type="text" name="name" placeholder="Name" />
+                </div>
+                <div class="email">
+                  <input type="email" name="email" placeholder="Email" />
+                </div>
+                <div class="password">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
+              <button class="button button-started">Get Started</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="social">
+      <div class="container">
+        <div class="social__item">
+          <div class="social__item-info">
+            <h4>Social Media</h4>
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </h5>
+          </div>
+          <div class="social__item-ico">
+            <a href="#"><i class="ico ico-facebook"></i></a>
+            <a href="#"><i class="ico ico-twitter"></i></a>
+            <a href="#"><i class="ico ico-linkedin"></i></a>
+            <a href="#"><i class="ico ico-pinterest"></i></a>
+            <a href="#"><i class="ico ico-instagram"></i></a>
+            <a href="#"><i class="ico ico-github"></i></a>
+            <a href="#"><i class="ico ico-rss"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tabs">
+      <div class="container">
+        <div class="tabs_container">
+          <div class="tab">
+            <button class="button tablinks active" data-btn="1">Tab 1</button>
+            <button class="button tablinks" data-btn="2">Tab 2</button>
+            <button class="button tablinks" data-btn="3">Tab 3</button>
+          </div>
+          <div class="tabContent">
+            <div class="tabcontent active" data-content="1">
+              <div class="contentText">
+                <h3>Tabs with soft transitioning effect.</h3>
+                <h5>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Aenean euismod bibendum laoreet.
+                </h5>
+                <a href="#" class="button button-inTabs">Download</a>
+              </div>
+              <div class="contentMedia">
+                <img class="media" src="./assets/mediaTab.png" alt="new york" />
+              </div>
+            </div>
+            <div class="tabcontent" data-content="2">
+              <div class="contentText">
+                <h3>Tabs with soft transitioning effect.</h3>
+                <h5>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Aenean euismod bibendum laoreet.
+                </h5>
+                <a href="#" class="button button-inTabs">Download</a>
+              </div>
+              <div class="contentMedia">
+                <img class="media" src="./assets/newYork.jpg" alt="new york" />
+              </div>
+            </div>
+            <div class="tabcontent" data-content="3">
+              <div class="contentText">
+                <h3>Tabs with soft transitioning effect.</h3>
+                <h5>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Aenean euismod bibendum laoreet.
+                </h5>
+                <a href="#" class="button button-inTabs">Download</a>
+              </div>
+              <div class="contentMedia">
+                <img class="media" src="./assets/newYork2.jpg" alt="new york" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="awesome" id="about">
+      <div class="container">
+        <h2>Why this is awesome</h2>
+        <div class="separator"></div>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        <div class="awesome__wrapper">
+          <div class="awesome__item">
+            <div class="awesome__item-pic awesome__item-light"></div>
+            <h4 class="awesome__item-title">Thoughtful Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="awesome__item">
+            <div class="awesome__item-pic awesome__item-keyboard"></div>
+            <h4 class="awesome__item-title">Thoughtful Design</h4>
+            <p class="awesome__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+          <div class="awesome__item">
+            <div class="awesome__item-pic awesome__item-lightning"></div>
+            <h4 class="awesome__item-title">Thoughtful Design</h4>
+            <p class="awesome__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price" id="pricing">
+      <div class="container">
+        <h2>pricing options</h2>
+        <div class="separator"></div>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        <div class="price__wrapper">
+          <div class="price__item">
+            <h4 class="price__item-title">Basic</h4>
+            <h3 class="price__item-dollar">$10</h3>
+            <p class="price__item-free">Free for life</p>
+            <ul class="price__item-space">
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+            </ul>
+          </div>
+          <div class="price__item">
+            <h4 class="price__item-title">Optima</h4>
+            <h3 class="price__item-dollar">$20</h3>
+            <p class="price__item-free">Free for life</p>
+            <ul class="price__item-space">
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+            </ul>
+          </div>
+          <div class="price__item">
+            <h4 class="price__item-title">Pro</h4>
+            <h3 class="price__item-dollar">$30</h3>
+            <p class="price__item-free">Free for life</p>
+            <ul class="price__item-space">
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+              <li class="space">1 gb of space</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customers" id="reviews">
+      <div class="container">
+        <h2>what our customers are saying</h2>
+        <div class="separator"></div>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        <div class="customers__wrapper">
+          <div class="customers__item active" data-content="1">
+            <h5 class="customers__item-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </h5>
+            <div class="customers__item-avatar">
+              <div class="customers__item-photo">
+                <img src="assets/Ellipse 7.png" alt="avatar" />
+              </div>
+              <div class="customers__item-job">
+                <h4 class="customers__item-title">Davis Rhiel Madsen</h4>
+                <p class="customers__item-text">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="customers__item" data-content="2">
+            <h5 class="customers__item-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </h5>
+            <div class="customers__item-avatar">
+              <div class="customers__item-photo">
+                <img src="assets/Ellipse 7 (1).png" alt="avatar" />
+              </div>
+              <div class="customers__item-job">
+                <h4 class="customers__item-title">Jaydon Rosser</h4>
+                <p class="customers__item-text">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="customers__item" data-content="3">
+            <h5 class="customers__item-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </h5>
+            <div class="customers__item-avatar">
+              <div class="customers__item-photo">
+                <img src="assets/Ellipse 7 (2).png" alt="avatar" />
+              </div>
+              <div class="customers__item-job">
+                <h4 class="customers__item-title">Cooper Dorwart</h4>
+                <p class="customers__item-text">Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <ul class="dots__item">
+            <li class="dot active" data-btn="1"></li>
+            <li class="dot" data-btn="2"></li>
+            <li class="dot" data-btn="3"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="stylish">
+      <div class="container">
+        <h2>stylish axure design</h2>
+        <div class="separator"></div>
+        <h5>
+          Use the sections you need, remove the ones you don't. Create gorgeous
+          prototypes faster than ever!
+        </h5>
+        <a href="#" class="button button-download">Download</a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>contact us</h2>
+        <div class="separator"></div>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        <form method="post" action="#">
+          <div class="contact__wrapper">
+            <div class="contact__item-input">
+              <div class="name-us">
+                <input type="text" name="contact-name" placeholder="Name" />
+              </div>
+              <div class="email-us">
+                <input type="email" name="contact-email" placeholder="Email" />
+              </div>
+              <div class="password-us">
+                <input
+                  type="password"
+                  name="contact-password"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <div class="contact__item-message">
+              <textarea
+                name="message"
+                cols="0"
+                rows="0"
+                placeholder="Message"
+              ></textarea>
+            </div>
+          </div>
+          <button class="button button-send">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social">
+          <a href="#"><i class="ico ico-facebook"></i></a>
+          <a href="#"><i class="ico ico-twitter"></i></a>
+          <a href="#"><i class="ico ico-linkedin"></i></a>
+          <a href="#"><i class="ico ico-pinterest"></i></a>
+          <a href="#"><i class="ico ico-instagram"></i></a>
+          <a href="#"><i class="ico ico-github"></i></a>
+          <a href="#"><i class="ico ico-rss"></i></a>
+        </div>
+        <h5>&copy; 2015 Axure Themes</h5>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

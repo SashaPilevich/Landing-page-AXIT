@@ -1,0 +1,45 @@
+@include laptop {
+  .contact {
+    h2 {
+      padding: 50px 0;
+      font-weight: 700;
+    }
+    h5 {
+      margin-bottom: 72px;
+    }
+    .contact__wrapper {
+      column-gap: 20px;
+    }
+    .button.button-send {
+      width: 318px;
+    }
+  }
+}
+@include tablet-s {
+  .contact {
+    padding: 0 0 40px;
+    h2 {
+      font-weight: 400;
+    }
+    .separator {
+      width: 134px;
+      margin: 0 auto 25px;
+    }
+    h5 {
+      margin-bottom: 50px;
+    }
+    .contact__wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+      margin: 0 auto;
+      .contact__item-message {
+        height: 200px;
+        margin-bottom: 50px;
+      }
+    }
+    .button.button-send {
+      width: 288px;
+      height: 50px;
+    }
+  }
+}

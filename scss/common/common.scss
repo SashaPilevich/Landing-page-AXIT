@@ -1,0 +1,178 @@
+body {
+  font-family: $default-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: $primary-color-text;
+  background-color: $tertiary-color-text;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.separator {
+  width: 170px;
+  margin: 0 auto 40px;
+  border: 1px solid $primary-color;
+}
+input,
+textarea,
+select {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: left;
+}
+input::placeholder,
+input::-ms-input-placeholder,
+input:-ms-input-placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder {
+  color: #bdbdbd;
+}
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: $tertiary-color-text;
+  margin-bottom: 56px;
+}
+h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: $second-font;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: capitalize;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  color: $secondary-color-text;
+}
+p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button {
+  @extend %flex-block-center;
+  font-family: $second-font;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: $tertiary-color-text;
+}
+.button.button-started,
+.button.button-send {
+  background-color: $primary-color;
+  border: none;
+  &:hover {
+    background: $hover-color;
+  }
+  &:active {
+    background-color: $primary-color;
+    box-shadow: inset 0px 0px 10px $active-color;
+  }
+}
+
+.button.button-download {
+  height: 58px;
+  border: 2px solid $tertiary-color-text;
+  &:hover {
+    color: $primary-color;
+    border: 2px solid $primary-color;
+  }
+  &:active {
+    background-color: $active-color;
+    border: 2px solid $active-color;
+    color: $tertiary-color-text;
+  }
+}
+.button.tablinks {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  width: 203px;
+  height: 41px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.button.tablinks.active {
+  border-radius: 5px 5px 0px 0px;
+
+  background-color: $primary-color;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.button.button-inTabs {
+  width: 270px;
+  height: 58px;
+  background: $primary-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+.ico-facebook {
+  background-image: url("../assets/facebook_icon.svg");
+  &:hover {
+    background-color: dodgerblue;
+  }
+}
+.ico-twitter {
+  background-image: url("../assets/twitter_icon.svg");
+  &:hover {
+    background-color: dodgerblue;
+  }
+}
+.ico-linkedin {
+  background-image: url("../assets/linkedin_icon.svg");
+  &:hover {
+    background-color: dodgerblue;
+  }
+}
+.ico-pinterest {
+  background-image: url("../assets/pinterest_icon.svg");
+  &:hover {
+    background-color: brown;
+  }
+}
+.ico-instagram {
+  background-image: url("../assets/instagram_icon.svg");
+  &:hover {
+    background-color: mediumorchid;
+  }
+}
+.ico-github {
+  background-image: url("../assets/github_icon.svg");
+  &:hover {
+    background-color: #333333;
+  }
+}
+.ico-rss {
+  background-image: url("../assets/rss_icon.svg");
+  &:hover {
+    background-color: orange;
+  }
+}

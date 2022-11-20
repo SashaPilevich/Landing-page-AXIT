@@ -1,0 +1,31 @@
+.social {
+  background: #f8efef;
+  margin-bottom: 100px;
+  padding: 20px 0;
+  .social__item {
+    display: grid;
+    grid-template-columns: 40% calc(60% - 30px);
+    column-gap: 30px;
+    .social__item-info {
+      text-align: left;
+      h4 {
+        color: #333333;
+        margin-bottom: 22px;
+      }
+      h5 {
+        color: $secondary-color-text;
+      }
+    }
+    .social__item-ico {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .ico {
+        display: block;
+        width: 70px;
+        height: 70px;
+        @include background(center);
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.contact {
+  padding: 50px 15px 50px;
+  h2 {
+    padding: 60px 0;
+  }
+  h5 {
+    margin-bottom: 89px;
+  }
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin-bottom: 50px;
+
+    .contact__item-input {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      row-gap: 50px;
+      .name-us,
+      .email-us,
+      .password-us {
+        text-align: left;
+        padding: 0 0 20px;
+        border-bottom: 1px solid #bdbdbd;
+      }
+    }
+    .contact__item-message {
+      border-bottom: 1px solid #bdbdbd;
+      opacity: 0.6;
+      text-align: left;
+    }
+  }
+  .button.button-send {
+    width: 370px;
+    height: 58px;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 auto;
+  }
+}

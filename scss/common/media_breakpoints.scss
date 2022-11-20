@@ -1,0 +1,43 @@
+@mixin desctop() {
+  @media (max-width: $breakpoint-xxl) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin laptop-small() {
+  @media (max-width: $breakpoint-l) {
+    @content;
+  }
+}
+
+@mixin laptop-small-m() {
+  @media (max-width: $breakpoint-m) {
+    @content;
+  }
+}
+@mixin tablet() {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+@mixin tablet-s() {
+  @media (max-width: $breakpoint-tablet-s) {
+    @content;
+  }
+}
+@mixin mobile() {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+@mixin mobile-small() {
+  @media (max-width: $breakpoint-mobile-small) {
+    @content;
+  }
+}
