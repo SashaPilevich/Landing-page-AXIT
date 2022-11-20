@@ -1,0 +1,52 @@
+.price {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+  h2 {
+    padding: 60px 0;
+  }
+  h5 {
+    margin-bottom: 79px;
+  }
+  .price__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    .price__item {
+      &:hover {
+        transform: translateY(-5%);
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+      .price__item-title,
+      .price__item-dollar,
+      .price__item-free,
+      .space {
+        @extend %flex-block-column-center;
+      }
+      .price__item-title,
+      .price__item-dollar,
+      .price__item-free {
+        height: 60px;
+        background: #333333;
+        border: 2px solid #f5f5f5;
+        color: $tertiary-color-text;
+      }
+      .price__item-dollar {
+        font-family: $default-font;
+        height: 100px;
+      }
+      .price__item-free {
+        color: rgba(255, 255, 255, 0.5);
+        height: 50px;
+      }
+      .space {
+        height: 50px;
+        background: $tertiary-color-text;
+        border: 2px solid #f5f5f5;
+        text-transform: capitalize;
+        text-align: center;
+        color: $secondary-color-text;
+      }
+    }
+  }
+}

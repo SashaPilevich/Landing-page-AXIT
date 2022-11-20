@@ -1,0 +1,121 @@
+@include laptop {
+  .banner {
+    height: 693px;
+    padding-top: 137px;
+    background-attachment: local;
+    .banner__item-text {
+      width: 454px;
+      .banner__item-logo {
+        width: 112px;
+        height: 41px;
+        margin-bottom: 38px;
+      }
+      h1 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 41px;
+      }
+      .separator {
+        width: 115px;
+        margin-bottom: 31px;
+      }
+      h5 {
+        margin-bottom: 31px;
+      }
+      .button.button-download {
+        width: 183px;
+        height: 50px;
+      }
+    }
+  }
+}
+@include laptop-small {
+  .banner {
+    .banner__item-form {
+      height: 400px;
+      padding: 25px 0 0;
+    }
+  }
+}
+@include tablet {
+  .banner {
+    padding-top: 84px;
+    height: 949px;
+    .banner__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .banner__item-text {
+        width: 70%;
+        .banner__item-logo {
+          display: none;
+        }
+        .separator {
+          margin: 0 auto 42px;
+          width: 134px;
+        }
+        h1,
+        h5 {
+          text-align: center;
+          margin-bottom: 42px;
+        }
+        .button.button-download {
+          width: 288px;
+          margin: 0 auto 56px;
+        }
+      }
+      .banner__item-form {
+        width: 50%;
+        height: 400px;
+        .form-field {
+          padding: 0 28px 0 20px;
+          margin-bottom: 51px;
+        }
+      }
+    }
+  }
+}
+@include tablet-s {
+  .banner {
+    .banner__item {
+      .banner__item-text {
+        width: 80%;
+        .button.button-download {
+          width: 288px;
+          height: 50px;
+        }
+      }
+      .banner__item-form {
+        width: 60%;
+      }
+    }
+  }
+}
+@include mobile {
+  .banner {
+    .banner__item {
+      .banner__item-text {
+        width: 95%;
+      }
+      .banner__item-form {
+        width: 70%;
+        height: 380px;
+      }
+    }
+  }
+}
+@include mobile-small {
+  .banner {
+    .banner__item {
+      .banner__item-form {
+        width: 80%;
+        form {
+          .form-field {
+            padding: 0 15px 0 15px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.header {
+  font-family: $second-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: $tertiary-color-text;
+  background-color: $primary-color-text;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__menu ul {
+      display: flex;
+      li {
+        height: 75px;
+        a {
+          @extend %flex-block-center;
+          padding: 0 30px;
+          height: 100%;
+          color: $tertiary-color-text;
+          &:hover {
+            background-color: $primary-color;
+          }
+          &:active {
+            background-color: $active-color;
+          }
+        }
+      }
+    }
+    .hidden-menu {
+      display: none;
+      width: 24px;
+      height: 18px;
+      z-index: 2;
+      input {
+        display: none;
+        opacity: 0;
+        z-index: 2;
+      }
+      label {
+        position: relative;
+        width: 24px;
+        height: 18px;
+        display: block;
+        z-index: 15;
+      }
+      .line {
+        background: $tertiary-color-text;
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-radius: 1px;
+        transition: all 0.5s;
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+      }
+      input:checked + label span {
+        background-color: $tertiary-color-text;
+        opacity: 1;
+        transform: translateY(6px) translateX(0) rotate(45deg);
+      }
+      input:checked + label span.line2 {
+        opacity: 0;
+      }
+      input:checked + label span.line3 {
+        transform: translateY(-6px) translateX(0) rotate(-45deg);
+      }
+      input:checked ~ .sidebar {
+        height: 130%;
+        top: 27px;
+      }
+      .sidebar {
+        padding-top: 16px;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 0;
+        top: -100%;
+        left: 0;
+        background: $primary-color-text;
+        background-size: cover;
+        ul li {
+          text-align: center;
+          padding: 25px 0;
+          a {
+            font-size: 14px;
+            line-height: 19px;
+            color: $tertiary-color-text;
+          }
+        }
+      }
+    }
+  }
+}

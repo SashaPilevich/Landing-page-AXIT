@@ -1,0 +1,46 @@
+@include desctop {
+  .container {
+    width: 1024px;
+  }
+}
+@include laptop {
+  .container {
+    width: 100%;
+  }
+  .separator {
+    width: 142px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .button.tablinks {
+    width: 170px;
+  }
+  .button.button-inTabs {
+    width: 230px;
+    margin-bottom: 30px;
+  }
+}
+@include tablet-s {
+  .button.tablinks {
+    width: 100px;
+  }
+  .button.button-inTabs {
+    width: 240px;
+    height: 50px;
+  }
+}

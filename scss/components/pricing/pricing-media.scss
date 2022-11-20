@@ -1,0 +1,69 @@
+@include laptop {
+  .price {
+    h2 {
+      padding: 50px 0;
+    }
+    h5 {
+      margin-bottom: 50px;
+    }
+    .price__wrapper {
+      column-gap: 20px;
+      .price__item-title {
+        height: 53px;
+      }
+      .price__item-dollar {
+        height: 88px;
+      }
+      .price__item-free {
+        height: 44px;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      .space {
+        height: 44px;
+      }
+    }
+  }
+}
+@include laptop-small-m {
+  .price {
+    .price__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 30px;
+    }
+  }
+}
+@include tablet-s {
+  .price {
+    padding: 0 0 30px;
+
+    .separator {
+      width: 134px;
+      margin: 0 auto 25px;
+    }
+    h5 {
+      margin-bottom: 24px;
+    }
+    .price__wrapper {
+      grid-template-columns: 1fr;
+      max-width: 370px;
+      margin: 0 auto;
+      row-gap: 27px;
+      .price__item-title {
+        height: 47px;
+      }
+      .price__item-dollar {
+        height: 78px;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .price__item-free,
+      .space {
+        height: 39px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  background-color: $primary-color-text;
+  padding: 40px 0 27px;
+  .footer__social {
+    @extend %flex-block-center;
+    .ico {
+      display: block;
+      width: 53.2px;
+      height: 53.2px;
+      @include background(center);
+      margin-bottom: 28px;
+    }
+    a:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+  h5 {
+    @extend %flex-block-center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

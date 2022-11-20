@@ -1,0 +1,19 @@
+%flex-block-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%flex-block-column-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+%flex-block-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+%background {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
